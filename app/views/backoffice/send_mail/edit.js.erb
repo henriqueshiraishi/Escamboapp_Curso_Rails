@@ -1,0 +1,13 @@
+$(function(){
+  let $sendMailModal = $('#sendMailModal')
+
+
+  $('#recipient-name').val('<%= @admin.email %>');
+  $('h4.modal-title').text('Enviar mensagem para <%= @admin.name %>');
+
+  $sendMailModal.modal();
+
+  $sendMailModal.on('show.bs.modal', function () {
+     $('#subject-name').focus();
+  })
+});
