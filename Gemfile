@@ -16,6 +16,10 @@ gem 'devise-i18n'
 gem 'enum_help'
 # pundit - Minimal authorization through OO design and pure Ruby classes
 gem 'pundit'
+# Integration of RubyMoney - Money with Rails
+gem 'money-rails'
+# Easy file attachment management for ActiveRecord https://thoughtbot.com/open-source
+gem 'paperclip', '~> 5.0.0'
 
 source 'https://rails-assets.org' do
   # bootstrap The most popular front-end framework for developing responsive, mobile first projects on the web.
@@ -35,6 +39,8 @@ group :development do
   gem 'faker'
   # Catches mail and serves it through a dream. http://mailcatcher.me
   gem 'mailcatcher'
+  # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+  gem 'lerolero_generator'
 end
 
 # ************ GERADAS ************

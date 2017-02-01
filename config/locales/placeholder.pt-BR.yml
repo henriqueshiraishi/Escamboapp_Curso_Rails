@@ -1,0 +1,8 @@
+'pt-BR':
+  placeholder:
+    email: E-mail
+    password: Senha
+    password_confirmation: Confirmar Senha
+    name_admin: Nome do Administrador
+    description_category: Animais/Pet
+

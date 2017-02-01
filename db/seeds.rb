@@ -33,3 +33,11 @@ Admin.create!(
                 role: 0
               )
 puts "Cadastrando o ADMINISTRADOR PADRÃO... (OK)"
+
+puts "Cadastrando o MEMBRO PADRÃO..."
+Member.create!(
+                email: "member@member.com",
+                password: "123456",
+                password_confirmation: "123456"
+              )
+puts "Cadastrando o MEMRO PADRÃO... (OK)"

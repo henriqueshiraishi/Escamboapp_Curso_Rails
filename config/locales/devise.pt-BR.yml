@@ -1,0 +1,60 @@
+"pt-BR":
+  devise:
+    confirmations:
+      confirmed: "Seu endereço de e-mail foi confirmado com sucesso."
+      send_instructions: "Você receberá um e-mail com instruções sobre como confirmar seu endereço de e-mail em alguns minutos."
+      send_paranoid_instructions: "Se o seu endereço de e-mail existir no nosso banco de dados, você receberá um e-mail com instruções sobre como confirmar seu endereço de e-mail em alguns minutos."
+    failure:
+      already_authenticated: "Você já está inscrito."
+      inactive: "Sua conta Ainda não esta ativada."
+      invalid: "inválido %{authentication_keys} ou senha."
+      locked: "Sua conta está bloqueada."
+      last_attempt: "Você tem mais uma tentativa antes de sua conta ser bloqueada."
+      not_found_in_database: "Inválido %{authentication_keys} ou senha."
+      timeout: "Sua sessão expirou. Faça login novamente para continuar."
+      unauthenticated: "Você precisa fazer login ou se inscrever antes de continuar."
+      unconfirmed: "Você precisa confirmar seu endereço de e-mail antes de continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Instruções de confirmação"
+      reset_password_instructions:
+        subject: "Repor instruções de palavra-passe"
+      unlock_instructions:
+        subject: "Instruções de desbloqueio"
+      password_change:
+        subject: "Senha alterada"
+    omniauth_callbacks:
+      failure: "Não foi possível autenticar você de %{kind} porque \"%{reason}\"."
+      success: "Autenticado com sucesso a partir de %{kind} conta."
+    passwords:
+      no_token: "Você não pode acessar esta página sem vir de um e-mail de redefinição de senha. Se você vir de um e-mail de redefinição de senha, verifique se usou o URL completo fornecido."
+      send_instructions: "Você receberá um e-mail com instruções sobre como redefinir sua senha em alguns minutos."
+      send_paranoid_instructions: "Se o seu endereço de e-mail existir no nosso banco de dados, você receberá um link de recuperação de senha em seu endereço de e-mail em poucos minutos."
+      updated: "Sua senha foi alterada com sucesso. Agora você está conectado."
+      updated_not_active: "Sua senha foi alterada com sucesso."
+    registrations:
+      destroyed: "Tchau! A sua conta foi cancelada com êxito. Esperamos te ver novamente em breve."
+      signed_up: "Bem vinda! Você se inscreveu com êxito."
+      signed_up_but_inactive: "Você se inscreveu com sucesso. No entanto, não foi possível fazer login porque sua conta ainda não está ativada."
+      signed_up_but_locked: "Você se inscreveu com sucesso. No entanto, não foi possível fazer login porque sua conta está bloqueada."
+      signed_up_but_unconfirmed: "Uma mensagem com um link de confirmação foi enviada para o seu endereço de e-mail. Siga o link para ativar sua conta."
+      update_needs_confirmation: "Você atualizou sua conta com êxito, mas precisamos verificar seu novo endereço de e-mail. Verifique seu e-mail e siga o link confirmar para confirmar seu novo endereço de e-mail."
+      updated: "Sua conta foi atualizada com sucesso."
+    sessions:
+      signed_in: "Iniciado com êxito."
+      signed_out: "Saiu com êxito."
+      already_signed_out: "Saiu com êxito."
+    unlocks:
+      send_instructions: "Você receberá um e-mail com instruções sobre como desbloquear sua conta em alguns minutos."
+      send_paranoid_instructions: "Se a sua conta existir, você receberá um e-mail com instruções sobre como desbloqueá-lo em alguns minutos."
+      unlocked: "Sua conta foi desbloqueada com êxito. Faça login para continuar."
+  errors:
+    messages:
+      already_confirmed: "Já foi confirmado, por favor, tente iniciar sessão"
+      confirmation_period_expired: "Precisa ser confirmado dentro %{period}, por favor solicite um novo"
+      expired: "Expirou, solicite um novo"
+      not_found: "não encontrado"
+      not_locked: "Não estava bloqueado"
+      not_saved:
+        one: "1 erro proibido este %{resource} de ser salvo:"
+        other: "%{count} erros proibidos este %{resource} de ser salvo:"

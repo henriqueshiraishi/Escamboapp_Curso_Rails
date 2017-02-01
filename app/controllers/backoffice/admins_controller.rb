@@ -15,7 +15,7 @@ class Backoffice::AdminsController < BackofficeController
   def create
     @admin = Admin.new(params_admin)
     if @admin.save
-      redirect_to backoffice_admins_path, notice: "O administrador (#{@admin.email}) foi cadastrado com sucesso."
+      redirect_to backoffice_admins_path, notice: t('message.admin_create', item: @admin.email)
     else
       render :new
     end
@@ -27,7 +27,7 @@ class Backoffice::AdminsController < BackofficeController
   def update
     if @admin.update(params_admin)
       AdminMailer.update_email(current_admin, @admin).deliver_now
-      redirect_to backoffice_admins_path, notice: "O administrador (#{@admin.email}) foi atualizado com sucesso."
+      redirect_to backoffice_admins_path, notice: t('message.admin_update', item: @admin.email)
     else
       render :edit
     end
@@ -37,7 +37,7 @@ class Backoffice::AdminsController < BackofficeController
     authorize @admin
     admin_email = @admin.email
     if @admin.destroy
-      redirect_to backoffice_admins_path, notice: "O administrador (#{admin_email}) foi excluído com sucesso."
+      redirect_to backoffice_admins_path, notice: t('message.admin_destroy', item: admin_email)
     else
       render :index
     end
@@ -50,14 +50,18 @@ class Backoffice::AdminsController < BackofficeController
   end
 
   def params_admin
-    passwd = params[:admin][:password]
-    passwd_confirmation = params[:admin][:password_confirmation]
-
-    if passwd.blank? && passwd_confirmation.blank?
+    if password_blank?
       params[:admin].except!(:password, :password_confirmation)
     end
 
-    params.require(:admin).permit(policy(Admin).permitted_attributes)
+    if @admin.blank?
+      params.require(:admin).permit(:name, :email, :role, :password, :password_confirmation)
+    else
+      params.require(:admin).permit(policy(@admin).permitted_attributes)
+    end
   end
 
+  def password_blank?
+    params[:admin][:password].blank? && params[:admin][:password_confirmation].blank?
+  end
 end

@@ -1,0 +1,9 @@
+'pt-BR':
+  labels:
+    sing_in: Por favor, inscreva-se
+    remember_me: Lembre-me
+    log_in: Entrar
+    recipient: Destinatário
+    subject: Assunto
+    message: Mensagem
+

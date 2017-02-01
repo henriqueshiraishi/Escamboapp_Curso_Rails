@@ -1,0 +1,15 @@
+'pt-BR':
+  message:
+    listing: Listando %{model}
+    edit_admin: Editando Administrador
+    new_admin: Novo Administrador
+    new_message: Nova Mensagem
+    admin_create: O administrador (%{item}) foi cadastrado com sucesso.
+    admin_update: O administrador (%{item}) foi atualizado com sucesso.
+    admin_destroy: O administrador (%{item}) foi excluído com sucesso.
+    email_send_success: Email enviado com sucesso.
+    email_send_error: Erro ao enviar o email. Tente novamente.
+    email_updated_data: Seus dados foram atualizados por
+    send_email_to: Enviar mensagem para
+    edit_category: Editando Categoria
+    new_category: Nova Categoria
