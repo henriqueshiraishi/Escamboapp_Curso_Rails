@@ -1,4 +1,4 @@
-== Projeto EscamboApp
+= Projeto EscamboApp
 
 Esse projeto está sendo desenvolvido no curso <b>Ruby on Rails Completo</b> no site Udemy com o professor Jackson Pires. Auxilia, também, o projeto <b>LiHead BackOffice</b> para a exibição das categorias.
 
@@ -17,10 +17,12 @@ Iniciando a aplicação:
 * E rode a aplicação em localhost, tendo a opção de utilizar o comando:
   <tt>foreman start</tt>
 
-= Dependências do projeto
+== Dependências do projeto
 
 * ImageMagick (https://www.imagemagick.org)
 <tt>
 sudo apt-get update
+</tt>
+<tt>
 sudo apt-get install imagemagick
 </tt>
