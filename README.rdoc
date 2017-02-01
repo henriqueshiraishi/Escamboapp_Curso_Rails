@@ -1,26 +1,26 @@
-# Projeto EscamboApp
+== Projeto EscamboApp
 
-Esse projeto está sendo desenvolvido no curso **Ruby on Rails Completo** no site Udemy com o professor Jackson Pires. Auxilia, também, o projeto **LiHead BackOffice** para a exibição das categorias.
+Esse projeto está sendo desenvolvido no curso <b>Ruby on Rails Completo</b> no site Udemy com o professor Jackson Pires. Auxilia, também, o projeto <b>LiHead BackOffice</b> para a exibição das categorias.
 
 Iniciando a aplicação:
 
 * Clona ou faça o Download do projeto.
 
 * Instale as Gems dependentes do projeto:
-  ```Bundle```
+  <tt>Bundle</tt>
 
-* Faça as configurações mínimas no arquivo **"database.yml"**
+* Faça as configurações mínimas no arquivo <b>"database.yml"</b>
 
 * Crie o banco de dados e o usuário padrão:
-  ```rake db:create db:migrate db:seed```
+  <tt>rake db:create db:migrate db:seed</tt>
 
 * E rode a aplicação em localhost, tendo a opção de utilizar o comando:
-  ```foreman start```
+  <tt>foreman start</tt>
 
-## Dependências do projeto
+= Dependências do projeto
 
 * ImageMagick (https://www.imagemagick.org)
-```
+<tt>
 sudo apt-get update
 sudo apt-get install imagemagick
-```
+</tt>
