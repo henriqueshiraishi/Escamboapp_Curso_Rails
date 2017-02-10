@@ -20,14 +20,34 @@ gem 'pundit'
 gem 'money-rails'
 # Easy file attachment management for ActiveRecord https://thoughtbot.com/open-source
 gem 'paperclip', '~> 5.0.0'
+# jQuery UI for the Rails asset pipeline
+gem 'jquery-ui-rails'
+# The safe Markdown parser, reloaded.
+gem 'redcarpet'
+# FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s
+gem 'friendly_id'
+# If Turbolinks are not enough for you. Wiselinks makes your application work faster.
+gem 'wiselinks'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari'
+# Translations for the kaminari gem
+gem 'kaminari-i18n'
+# A Ruby Gem that wraps the functionality of jQuery Raty library, and provides optional IMDB style rating.
+gem 'ratyrate'
 
 source 'https://rails-assets.org' do
   # bootstrap The most popular front-end framework for developing responsive, mobile first projects on the web.
   gem 'rails-assets-bootstrap', '3.3.7'
-  # NotifyJs
-  gem 'rails-assets-notifyjs'
   # BootBox JS
   gem 'rails-assets-bootbox'
+  # BootStrap Notify
+  gem 'rails-assets-bootstrap.growl'
+  # Animate.css
+  gem 'rails-assets-animate-css'
+  # bootstrap-markdown
+  gem 'rails-assets-bootstrap-markdown'
+  # marked
+  gem 'rails-assets-marked'
 end
 
 group :development do
@@ -37,6 +57,8 @@ group :development do
   gem 'rails-erd'
   # Faker
   gem 'faker'
+  # Markdown Lorem Ipsum generator
+  gem 'doctor_ipsum'
   # Catches mail and serves it through a dream. http://mailcatcher.me
   gem 'mailcatcher'
   # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.

@@ -5,4 +5,10 @@
     password_confirmation: Confirmar Senha
     name_admin: Nome do Administrador
     description_category: Animais/Pet
-
+    title: Título
+    ad_create: Anúncio %(item) criado com sucesso.
+    ad_update: Anúncio %(item) atualizado com sucesso.
+    search_for: Pesquisar por...
+    name_member: Nome do membro
+    first_name: Primeiro Nome
+    second_name: Segundo Nome

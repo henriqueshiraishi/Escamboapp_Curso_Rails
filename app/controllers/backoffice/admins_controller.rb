@@ -6,7 +6,6 @@ class Backoffice::AdminsController < BackofficeController
   def index
     @admins = policy_scope(Admin)
   end
-
   def new
     @admin = Admin.new
     authorize @admin

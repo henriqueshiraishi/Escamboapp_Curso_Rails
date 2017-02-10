@@ -12,6 +12,13 @@
     send_message: Enviar Mensagem
     search: Pesquisar
     login: Entrar
-    signup: Cadastrar-se
+    signup: Cadastra-se
     logout: Sair
-
+    profile: Perfil
+    Forgot_password: Esqueceu sua senha?
+    search: Pesquisar
+    comment_modal: Deixe um comentário
+    comment_modal_logout: Efetue login para comentar
+    creat_account: Criar conta
+    reset_password_instructions: Envie-me instruções para redefinir a senha
+    change_my_password: Redefinir minha senha

@@ -13,6 +13,9 @@
       ad:
         one: Anúncio
         other: Anúncios
+      profile_member:
+        one: Perfil do Membro
+        other: Perfil dos Membros
     attributes:
       member:
         id: Código
@@ -34,12 +37,25 @@
         id: Código
         title: Título
         description: Descrição
+        description_md: Descrição/Markdown
+        description_short: Breve Descrição
+        category: Categoria
         category_id: Código da Categoria
         member_id: Código do Usuário
         created_at: Criado em
         updated_at: Atualizado em
+        picture: Imagem
+        price: Preço
+        finish_date: Data de Finalização
       category:
         id: Código
         description: Descrição
+        created_at: Criado em
+        updated_at: Atualizado em
+      profile_member:
+        first_name: Primeiro Nome
+        second_name: Segundo Nome
+        birthdate: Data de Aniversário
+        member_id: Código do Usuário
         created_at: Criado em
         updated_at: Atualizado em

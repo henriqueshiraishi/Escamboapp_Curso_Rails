@@ -1,6 +1,7 @@
 'pt-BR':
   backoffice_menu:
+    logout: Sair
     dashboard: Dashboard
     categories: Categorias
     admins: Administradores
-    logout: Sair
+    diagrams_erd: Diagrama ER

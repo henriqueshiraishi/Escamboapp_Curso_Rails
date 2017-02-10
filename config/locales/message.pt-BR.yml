@@ -13,3 +13,11 @@
     send_email_to: Enviar mensagem para
     edit_category: Editando Categoria
     new_category: Nova Categoria
+    new_ad: Novo Anúncio
+    editing_ad: Editando Anúncio
+    ad_create: Anúncio (%{item}) cadastrado com sucesso.
+    ad_update: Anúncio (%{item}) atualizado com sucesso.
+    comment_create_success: Comentário adicionado com sucesso.
+    comment_create_error: Erro ao adicionar comentário.
+    edit_profile_member: Editando Perfil
+    perfil_member_update: Perfil atualizado com sucesso.

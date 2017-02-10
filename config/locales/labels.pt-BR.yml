@@ -1,9 +1,17 @@
 'pt-BR':
   labels:
-    sing_in: Por favor, inscreva-se
-    remember_me: Lembre-me
+    sing_in: Por favor, inscreva-se...
+    remember_me: Lembrar-me
     log_in: Entrar
     recipient: Destinatário
     subject: Assunto
     message: Mensagem
-
+    Dont_have_an_account: Não possui uma conta!
+    markdown_preview: "Pré-visualização do Markdown"
+    send_comment: Envie seu comentário
+    comment: Comentário
+    comments: comentários
+    review: Avaliação
+    reviews: Avaliações
+    forgot_your_password?: Esqueceu sua senha?
+    change_your_password: Redefina sua senha

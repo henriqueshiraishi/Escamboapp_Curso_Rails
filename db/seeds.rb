@@ -20,7 +20,7 @@ CATEGORIAS = [
               "Empregos e negócios"
             ]
 CATEGORIAS.each do |category|
-  Category.find_or_create_by(description: category)
+  Category.friendly.find_or_create_by(description: category)
 end
 puts "Cadastrando as CATEGORIAS... (OK)"
 
@@ -35,9 +35,13 @@ Admin.create!(
 puts "Cadastrando o ADMINISTRADOR PADRÃO... (OK)"
 
 puts "Cadastrando o MEMBRO PADRÃO..."
-Member.create!(
+member = Member.new(
                 email: "member@member.com",
                 password: "123456",
                 password_confirmation: "123456"
               )
+member.build_profile_member
+member.profile_member.first_name = "Membro Padrão"
+member.profile_member.second_name = "Membro Padrão"
+member.save!
 puts "Cadastrando o MEMRO PADRÃO... (OK)"

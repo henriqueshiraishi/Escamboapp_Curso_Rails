@@ -50,6 +50,13 @@
                         <i class="fa fa-users fa-fw"></i> <%= t('backoffice_menu.admins') %>
                     <% end %>
                 </li>
+                <% if Rails.env.development? %>
+                    <li>
+                        <%= link_to backoffice_diagrams_path do %>
+                            <i class="fa fa-database fa-fw"></i> <%= t('backoffice_menu.diagrams_erd') %>
+                        <% end %>
+                    </li>
+                <% end %>
             </ul>
         </div>
         <!-- /.sidebar-collapse -->
